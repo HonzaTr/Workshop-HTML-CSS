@@ -76,20 +76,39 @@
     text-transform: uppercase;
     text-decoration: none;
 
+
     height: 70px;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
     align-items: center;
+    position: relative;
  }
 
  .header__item a:hover {
-
     color: var(--color-black);
-    border-bottom: 4px solid var(--primary-color);
 
  }
 
  .header__item a:focus {
     outline: none;
+ }
+
+
+
+ .header__item a::after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    bottom: 0px;
+    left: 0px;
+    transform: scaleX(0);
+ }
+
+ .header__item a:hover::after {
+
+    transform: scaleX(1);
  }
