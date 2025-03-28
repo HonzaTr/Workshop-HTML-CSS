@@ -99,8 +99,8 @@
     outline: none;
  }
 
- .header__item a::after {
 
+ .header__item a:hover::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -108,11 +108,6 @@
     background-color: var(--primary-color);
     bottom: 0px;
     left: 0px;
-    transform: scaleX(0);
- }
-
- .header__item a:hover::after {
-    transform: scaleX(1);
  }
 
 
@@ -182,7 +177,7 @@
 /*STATISTICS SECTION*/
 
 .statistics {
-    height: 40vh;
+    height: 50vh;
 }
 
 .statistics__title {
@@ -308,3 +303,92 @@
 
     margin-top: 100px;
 }
+
+/*BENEFITS SECTION*/
+
+.benefits{
+
+    height: 100vh;
+    background-color: var(--color-light-grey);
+    padding-top: 105px;
+}
+
+.benefits__card {
+
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__title {
+    
+    font-family: var(--raleway-font);
+    font-size: 2.25rem;
+    line-height: 2.63rem;
+    color: var(--color-black);
+
+}
+
+.card__p {
+
+    font-family: var(--opensans-font);
+    font-size: 1rem;
+    line-height: 1.38rem;
+    color: var(--color-black);
+    margin-top: 30px;
+
+}
+
+.card__underline {
+
+    content:"";
+    height: 4px;
+    width: 50%;
+    background-color: var(--color-redish);
+    margin-top: 50px;
+}
+
+.card__img {
+
+    background-image: url(../assets/Macbook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 386px;
+    height: 219px;
+    transform: translate(0%, 20%);
+    position: relative;
+    z-index: 1;
+
+}
+
+.benefits__card__text {
+
+    align-self: center;
+    margin-left: 35px;
+
+    width: 50%;
+}
+
+.card__decoration {
+
+    content:"";
+    height: 180px;
+    width: 180px;
+    background-color: var(--color-redish);
+    border-radius: 41px;
+    position: absolute;
+    transform: translate(70%, 0%) rotate(45deg);
+    z-index: 0;
+}
+
+.benefits__card__img {
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
